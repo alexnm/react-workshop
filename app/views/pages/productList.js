@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import Helmet from "react-helmet";
 import { fetchProducts } from "../../ducks/productList";
 import { Api } from "../../utilities";
-import { ProductEntry } from "../components";
+import { ProductEntry } from "../components/product";
 
 const loadProducts = Api.get( fetchProducts );
 

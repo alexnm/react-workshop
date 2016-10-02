@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-import Dictionary from "../../dictionary";
+import Dictionary from "../../../dictionary";
 
 const CartItem = ( { item, index, onRemoveItem } ) => (
     <div className="cart-item">
