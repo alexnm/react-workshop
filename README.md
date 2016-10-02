@@ -39,3 +39,18 @@ To check the `eslint` rules run
 ```
 npm run linter
 ```
+
+## Workshop
+
+The workshop has 2 separate tasks, each having multiple subtasks
+* implementing a product details page with server side rendering
+* implementing a shopping cart, which is available only for logged users and is stored on the local storage
+
+There are 3 tags part of this repo:
+* initial
+* intermediate
+* final
+
+The first tag is the starting point of the workshop and provides the initial project structure and a few pages implemented.
+The `intermediate` tag contains the code after the product details page has been fully implemented.
+The last tag contains the final code, as it should look with the basic shopping cart implemented.
