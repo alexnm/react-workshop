@@ -34,3 +34,8 @@ or, for UNIX users you can run the tasks in parallel in the same terminal with
 npm run development
 ```
 Then you can open http://localhost:1234 and start the app.
+
+To check the `eslint` rules run
+```
+npm run linter
+```
