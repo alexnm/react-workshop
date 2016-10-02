@@ -1,6 +1,6 @@
 import React from "react";
 import { IndexRoute, Route, Redirect } from "react-router";
-import { Home, Login, NotFound, ProductList, ProductDetails } from "./views/pages";
+import { Home, Login, NotFound, ProductList } from "./views/pages";
 import Layout from "./views/layouts/layout";
 import { setRedirectAfterLogin } from "./ducks/session";
 
@@ -20,7 +20,6 @@ export default function createRoutes( dispatch ) {
             <Redirect from="/old-url" to="/products" />
             <Route path="/login" component={ Login } />
             <Route path="/products" component={ ProductList } />
-            <Route path="/products/:id" component={ ProductDetails } />
             <Route path="/*" component={ NotFound } />
         </Route>
     );
