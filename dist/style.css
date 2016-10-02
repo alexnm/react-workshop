@@ -1,0 +1,86 @@
+.error span {
+    color: red;
+}
+
+.link {
+    color: #666;
+    font-style: italic;
+    cursor: pointer;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.navlink {
+    color: #333;
+    margin: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-box {
+    margin: 5px;
+}
+
+.product-box .product-image {
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.product-image {
+    width: 200px;
+}
+
+.cart-item {
+    margin: 15px;
+}
+
+.cart-item .link {
+    margin-left: 10px;
+}
+
+.notification-center {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.notification-center .message {
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.notification-center .message.info {
+    background-color: green;
+}
+
+.notification-center .message.warning {
+    background-color: orange;
+}
+
+.notification-center .message.error {
+    background-color: red;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.spinner {
+    background: url( "/dist/images/ajax-loader.gif" ) center center no-repeat;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,44 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Banana",
+            "price": 12.99,
+            "description": "Banana!",
+            "stock": 100,
+            "imageUrl": "/dist/images/banana.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Apple",
+            "price": 9.99,
+            "description": "Apple!",
+            "stock": 100,
+            "imageUrl": "/dist/images/apple.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Orange",
+            "price": 2.99,
+            "description": "Orange!",
+            "stock": 100,
+            "imageUrl": "/dist/images/orange.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Watermelon",
+            "price": 10.49,
+            "description": "Watermelon!",
+            "stock": 100,
+            "imageUrl": "/dist/images/watermelon.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Plum",
+            "price": 12.99,
+            "description": "Plum!",
+            "stock": 100,
+            "imageUrl": "/dist/images/plum.png"
+        }
+    ]
+}
