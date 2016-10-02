@@ -40,6 +40,9 @@
         "react/jsx-filename-extension": 0,
         "react/jsx-curly-spacing": [ 2, "always" ],
         "react/jsx-indent": [ 2, 4 ],
-        "react/prop-types": 2
+        "react/prop-types": 2,
+
+        // windows vs linx
+        "linebreak-style": 0
     }
 }
