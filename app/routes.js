@@ -1,8 +1,7 @@
 import React from "react";
 import { IndexRoute, Route, Redirect } from "react-router";
-import { Cart, Home, Login, NotFound, ProductList, ProductDetails } from "./views/pages";
+import { Home, Login, NotFound, ProductList, ProductDetails } from "./views/pages";
 import Layout from "./views/layouts/layout";
-import { withAuthentication } from "./views/enhancers";
 import { setRedirectAfterLogin } from "./ducks/session";
 
 export default function createRoutes( dispatch ) {
@@ -22,7 +21,6 @@ export default function createRoutes( dispatch ) {
             <Route path="/login" component={ Login } />
             <Route path="/products" component={ ProductList } />
             <Route path="/products/:id" component={ ProductDetails } />
-            <Route path="/my-cart" component={ withAuthentication( Cart ) } />
             <Route path="/*" component={ NotFound } />
         </Route>
     );

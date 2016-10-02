@@ -20,7 +20,6 @@ const Layout = ( { showSpinner, isAuthenticated, children, onLogout } ) => {
             <div>
                 <Link className="navlink" to="/">Home</Link>
                 <Link className="navlink" to="/products">Products</Link>
-                <Link className="navlink" to="/my-cart">My Cart</Link>
                 { userLink }
             </div>
             <div>
