@@ -10,7 +10,6 @@ import Helmet from "react-helmet";
 import apiRoutes from "./apiRoutes";
 import createRoutes from "../app/routes";
 import configureStore from "../app/store";
-import { initializeSession } from "../app/ducks/session";
 
 const app = express( );
 
@@ -24,11 +23,6 @@ app.use( "/api", apiRoutes );
 app.use( ( req, res ) => {
     const store = configureStore( );
     const routes = createRoutes( store.dispatch );
-
-    const token = req.cookies.token;
-    if ( token ) {
-        store.dispatch( initializeSession( token ) );
-    }
 
     match( { routes, location: req.url }, ( error, redirect, props ) => {
         if ( error ) {
