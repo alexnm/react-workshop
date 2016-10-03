@@ -43,8 +43,21 @@ npm run linter
 ## Workshop
 
 The workshop has 2 separate tasks, each having multiple subtasks
-* implementing a product details page with server side rendering
-* implementing a shopping cart, which is available only for logged users and is stored on the local storage
+
+Part 1: implementing a product details page with server side rendering
+* create route with product id as param
+* implement duck & product page
+* link product page from product list
+* set meta tags for details page
+* implement server side render with prefetch for the details page
+
+Part 2: implementing a shopping cart, which is available only for logged users and is stored on the local storage
+* create a route for the cart (available for logged users only)
+* add the "add to cart" button on product detail with the corresponding action
+* create a cart page (with ability to remove item)
+* push a notification when an item is added and/or removed
+* create a custom middleware for storing the cart to localStorage
+* bonus: move cookie token read logic to server side render
 
 There are 3 tags part of this repo:
 * initial
