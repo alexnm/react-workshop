@@ -10,17 +10,10 @@ This codebase was developed as a support for a mid-level complexity how-to works
 
 ## Installation
 
-After you have cloned this repo, you need to install the following global packages for `node`
-```
-npm i webpack -g
-npm i nodemon -g
-npm i eslint -g
-```
-then run
+After you have cloned this repo, you need to install all the dependencies
 ```
 npm i
 ```
-to install the project dependencies
 
 ## Usage
 
