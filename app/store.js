@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware, combineReducers } from "redux";
+import { createStore, applyMiddleware, combineReducers, compose } from "redux";
 import thunkMiddleware from "redux-thunk";
 import createLogger from "redux-logger";
 import { storeAuthToken } from "./middlewares";
@@ -7,19 +7,31 @@ import { busy, notifications, products, serverError, session } from "./ducks";
 export default function configureStore( initialState ) {
     const loggerMiddleware = createLogger( );
 
-    const createStoreWithMiddleware = applyMiddleware(
-        loggerMiddleware,
-        thunkMiddleware,
-        storeAuthToken
-    )( createStore );
+    let devTools;
+    try {
+        devTools = window.devToolsExtension ? window.devToolsExtension() : f => f;
+    } catch ( e ) {
+        devTools = f => f;
+    }
 
-    const combinedReducer = combineReducers( {
-        busy,
-        notifications,
-        products,
-        serverError,
-        session,
-    } );
+    const store = createStore(
+        combineReducers( {
+            busy,
+            notifications,
+            products,
+            serverError,
+            session,
+            initialState,
+        } ),
+        compose(
+            applyMiddleware(
+                loggerMiddleware,
+                thunkMiddleware,
+                storeAuthToken
+            ),
+            devTools
+        )
+    );
 
-    return createStoreWithMiddleware( combinedReducer, initialState );
+    return store;
 }
